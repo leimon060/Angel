@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #ffe6e6, #ffd9e6);
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.album-card {
+  background: rgba(255, 240, 240, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 200, 220, 0.9);
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 25px;
+  background: #ff8fab;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.back-btn:hover {
+  background: #ff6f9f;
+}
